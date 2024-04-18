@@ -1,0 +1,56 @@
+Diagrama de máquina de estados: reformular pensando nos estados da interface, as telas mesmo, do mercado e do cliente, na quinta a gente mexe nele...
+
+TAP - numeração dos itens está incorreta... manda o que mais tiver feito pra mim conferir aqui e quinta nois valida ou finaliza
+
+
+
+pasta de estágio
+dúvida ao preencher a redação do relatório final - ADS
+
+
+
+
+
+
+
+
+
+
+
+
+
+*******************************************************************************************************
+
+reorganizar a documentação de requisitos, regra de negócio não é regra sistêmica, procura a definição de regra de negócio e regra sistêmica...
+
+na EAP, reorganizar as setas, é exatamente oq o Carlão lançou no quadro.
+
+
+*******************************************************************************************************
+
+ID: Identificador único = RF01 ou RNF01			
+
+Nome: Verbo no infinitivo – o mesmo do BPMN
+
+Categoria: 	RF = evidente ou oculto
+		RNF = segurança, performance ou compatibilidade
+
+Prioridade: Essencial(é uma regra?), Importante, Desejável. 
+(quando o sistema está dentro da pool principal ele está funcionando corretamente, quando tem requisito não funcional em andamento no sistema o sistema está funcionando eficientemente)
+
+Descrição: O sistema deverá... alguma coisa sobre o requisito
+
+Informações: Descrever TODOS os atributos/campos. Ex: precisa cadastrar o cliente, descrever TODOS os campos necessários;
+
+Regra do negócio: Atenção... não se trata de rquisito do Sistema, é uma regra obrigatória;
+			Se não tiver: Não há regra.
+*******************************************************************************************************
+
+
+
+
+
+
+
+
+
