@@ -85,27 +85,406 @@
         <bpmn:flowNodeRef>Activity_0tf6bjx</bpmn:flowNodeRef>
       </bpmn:lane>
     </bpmn:laneSet>
-    <bpmn:endEvent id="Event_1uey9vx" name="Fim">
-      <bpmn:incoming>Flow_1sqf8zh</bpmn:incoming>
+    <bpmn:sequenceFlow id="Flow_0hq6xls" sourceRef="Activity_0b9e2e9" targetRef="Activity_17xnoq3" />
+    <bpmn:sequenceFlow id="Flow_0dxbdz0" sourceRef="Activity_1ph9scl" targetRef="Activity_0b9e2e9" />
+    <bpmn:sequenceFlow id="Flow_1nj7t5d" sourceRef="Activity_0vcnt47" targetRef="Activity_17xnoq3" />
+    <bpmn:sequenceFlow id="Flow_1ocxo5x" sourceRef="Activity_0tf6bjx" targetRef="Activity_1i1873i" />
+    <bpmn:sequenceFlow id="Flow_11g9nfa" sourceRef="Gateway_0qssdcc" targetRef="Activity_1kr3ur4" />
+    <bpmn:sequenceFlow id="Flow_0tly11b" name="notificação" sourceRef="Gateway_0dkty6l" targetRef="Activity_1k8krfy" />
+    <bpmn:sequenceFlow id="Flow_1am5osp" name="Continue" sourceRef="Gateway_0dkty6l" targetRef="Activity_1jch6x5" />
+    <bpmn:sequenceFlow id="Flow_0spt6x0" sourceRef="Activity_1baa1ha" targetRef="Gateway_0dkty6l" />
+    <bpmn:sequenceFlow id="Flow_03r61th" sourceRef="Gateway_0qssdcc" targetRef="Activity_1baa1ha" />
+    <bpmn:sequenceFlow id="Flow_1ooz5pw" sourceRef="Activity_1i1873i" targetRef="Gateway_0uwptwp" />
+    <bpmn:sequenceFlow id="Flow_1bc9m4l" sourceRef="Activity_0wghuv1" targetRef="Gateway_0qssdcc" />
+    <bpmn:sequenceFlow id="Flow_0qbteu5" sourceRef="Gateway_0uwptwp" targetRef="Activity_0vdqswz" />
+    <bpmn:sequenceFlow id="Flow_1lii7fv" sourceRef="Activity_1746ytz" targetRef="Activity_0wghuv1" />
+    <bpmn:sequenceFlow id="Flow_1txnp1s" sourceRef="Gateway_0uwptwp" targetRef="Activity_1746ytz" />
+    <bpmn:sequenceFlow id="Flow_1ywuzy0" sourceRef="Activity_07tfx5k" targetRef="Activity_1746ytz" />
+    <bpmn:sequenceFlow id="Flow_0drdxs8" sourceRef="Activity_15rp7sa" targetRef="Activity_0z0z5fq" />
+    <bpmn:sequenceFlow id="Flow_0eaf3lm" sourceRef="Gateway_1x8s2gv" targetRef="Activity_08ch79s" />
+    <bpmn:sequenceFlow id="Flow_1lm484q" name="Não" sourceRef="Gateway_1x8s2gv" targetRef="Activity_1inqd0m" />
+    <bpmn:sequenceFlow id="Flow_1d8wl1y" sourceRef="Activity_1inqd0m" targetRef="Gateway_1x8s2gv" />
+    <bpmn:sequenceFlow id="Flow_0o8gq1o" sourceRef="Activity_0049zvk" targetRef="Event_0v0cqvj" />
+    <bpmn:sequenceFlow id="Flow_0i9ylir" name="Cartão/PIX" sourceRef="Gateway_16o7985" targetRef="Activity_1inqd0m" />
+    <bpmn:sequenceFlow id="Flow_1q0lmdp" name="Dinheiro" sourceRef="Gateway_16o7985" targetRef="Activity_1ph9scl" />
+    <bpmn:sequenceFlow id="Flow_08b15u3" sourceRef="Activity_02s8mfr" targetRef="Gateway_16o7985" />
+    <bpmn:sequenceFlow id="Flow_1qp04c0" sourceRef="Gateway_1s6u191" targetRef="Activity_0kisw83" />
+    <bpmn:sequenceFlow id="Flow_1rskhne" sourceRef="Activity_1pxypiv" targetRef="Gateway_1s6u191" />
+    <bpmn:sequenceFlow id="Flow_1dh2nkm" sourceRef="Event_1c084sw" targetRef="Activity_0kisw83" />
+    <bpmn:sequenceFlow id="Flow_07i0he1" sourceRef="Activity_1kr3ur4" targetRef="Event_1c084sw" />
+    <bpmn:sequenceFlow id="Flow_1x1mn8c" sourceRef="Activity_1k8krfy" targetRef="Event_1c084sw" />
+    <bpmn:sequenceFlow id="Flow_1xs213n" sourceRef="Activity_0kjd9pr" targetRef="Activity_02s8mfr" />
+    <bpmn:sequenceFlow id="Flow_1gc3a3m" sourceRef="Activity_0kisw83" targetRef="Activity_0kjd9pr" />
+    <bpmn:sequenceFlow id="Flow_05tjd12" sourceRef="Activity_1jch6x5" targetRef="Activity_0kjd9pr" />
+    <bpmn:sequenceFlow id="Flow_1sbgar2" sourceRef="Activity_0141ycs" targetRef="Gateway_1hzxyav" />
+    <bpmn:sequenceFlow id="Flow_19q8j9e" sourceRef="Gateway_004u30l" targetRef="Activity_0141ycs" />
+    <bpmn:sequenceFlow id="Flow_1wfxvah" sourceRef="Activity_0wgvj5p" targetRef="Activity_1pxypiv" />
+    <bpmn:sequenceFlow id="Flow_0fgmfit" sourceRef="Activity_1nevjpm" targetRef="Activity_07tfx5k" />
+    <bpmn:sequenceFlow id="Flow_1nscpf9" sourceRef="Gateway_1s6u191" targetRef="Activity_1nevjpm" />
+    <bpmn:sequenceFlow id="Flow_1m8y58w" sourceRef="Activity_0vvb04p" targetRef="Activity_0wgvj5p" />
+    <bpmn:sequenceFlow id="Flow_0f27dgx" name="continue" sourceRef="Gateway_0vq45s0" targetRef="Activity_0vvb04p" />
+    <bpmn:sequenceFlow id="Flow_152d6ju" name="Não" sourceRef="Gateway_0r2zkax" targetRef="Activity_0vvb04p" />
+    <bpmn:sequenceFlow id="Flow_0p7gas1" sourceRef="Activity_1pwskox" targetRef="Gateway_0r2zkax" />
+    <bpmn:sequenceFlow id="Flow_06xi5sd" sourceRef="Gateway_1hzxyav" targetRef="Activity_1pwskox" />
+    <bpmn:sequenceFlow id="Flow_0zsganr" sourceRef="Activity_1em2c63" targetRef="Gateway_1hzxyav" />
+    <bpmn:sequenceFlow id="Flow_0yup46h" sourceRef="Gateway_004u30l" targetRef="Activity_1em2c63" />
+    <bpmn:sequenceFlow id="Flow_0fokbh1" sourceRef="Activity_1x5a8pv" targetRef="Gateway_1hzxyav" />
+    <bpmn:sequenceFlow id="Flow_1fuw974" sourceRef="Gateway_004u30l" targetRef="Activity_1x5a8pv" />
+    <bpmn:sequenceFlow id="Flow_0yhw9id" sourceRef="Activity_03g4qg7" targetRef="Gateway_0vq45s0" />
+    <bpmn:sequenceFlow id="Flow_0tp6fak" sourceRef="Activity_0z0z5fq" targetRef="Activity_03g4qg7" />
+    <bpmn:sequenceFlow id="Flow_08drwst" sourceRef="Activity_0srl0id" targetRef="Activity_15rp7sa" />
+    <bpmn:sequenceFlow id="Flow_0tba1tg" sourceRef="Gateway_1naef0f" targetRef="Activity_0srl0id" />
+    <bpmn:sequenceFlow id="Flow_0n2k8rc" sourceRef="Activity_01cq0lc" targetRef="Gateway_004u30l" />
+    <bpmn:sequenceFlow id="Flow_0s674oj" name="Sim" sourceRef="Gateway_0r2zkax" targetRef="Activity_01cq0lc" />
+    <bpmn:sequenceFlow id="Flow_1kc9g7v" name="Edita lista" sourceRef="Gateway_0vq45s0" targetRef="Activity_01cq0lc" />
+    <bpmn:sequenceFlow id="Flow_0zs66mh" sourceRef="Activity_19y5yxn" targetRef="Gateway_0vq45s0" />
+    <bpmn:sequenceFlow id="Flow_1immezm" sourceRef="Activity_0v1sxr7" targetRef="Activity_19y5yxn" />
+    <bpmn:sequenceFlow id="Flow_1rhpp76" sourceRef="Gateway_1naef0f" targetRef="Activity_0v1sxr7" />
+    <bpmn:sequenceFlow id="Flow_1on6ese" sourceRef="Activity_08tu5an" targetRef="Activity_09gvwhe" />
+    <bpmn:sequenceFlow id="Flow_0ggwug6" sourceRef="Activity_09gvwhe" targetRef="Gateway_1oz4zra" />
+    <bpmn:sequenceFlow id="Flow_16xa89k" sourceRef="Activity_03a2rv3" targetRef="Activity_08tu5an" />
+    <bpmn:sequenceFlow id="Flow_0gnng8k" name="Não" sourceRef="Gateway_1oz4zra" targetRef="Activity_03a2rv3" />
+    <bpmn:sequenceFlow id="Flow_0b659ta" sourceRef="Gateway_1naef0f" targetRef="Activity_03a2rv3" />
+    <bpmn:sequenceFlow id="Flow_09cimdi" sourceRef="Activity_0v26ngc" targetRef="Gateway_1naef0f" />
+    <bpmn:sequenceFlow id="Flow_0fuirv9" name="Sim" sourceRef="Gateway_1oz4zra" targetRef="Activity_0v26ngc" />
+    <bpmn:sequenceFlow id="Flow_0ef7v32" sourceRef="Activity_0pje7xd" targetRef="Activity_0v26ngc" />
+    <bpmn:sequenceFlow id="Flow_02adwg7" sourceRef="Activity_0i7bis5" targetRef="Activity_07unj0q" />
+    <bpmn:sequenceFlow id="Flow_1rjet07" name="Não" sourceRef="Gateway_0u6mis1" targetRef="Activity_0i7bis5" />
+    <bpmn:sequenceFlow id="Flow_0l07hky" sourceRef="Activity_07unj0q" targetRef="Gateway_0u6mis1" />
+    <bpmn:sequenceFlow id="Flow_1cc7cca" sourceRef="Activity_05mqk2i" targetRef="Activity_1lwo7e1" />
+    <bpmn:sequenceFlow id="Flow_18j318p" name="Sim" sourceRef="Gateway_0u6mis1" targetRef="Activity_05mqk2i" />
+    <bpmn:sequenceFlow id="Flow_1ple0a6" name="Não" sourceRef="Gateway_1eltz62" targetRef="Activity_0i7bis5" />
+    <bpmn:sequenceFlow id="Flow_0cku4fq" name="Sim" sourceRef="Gateway_1eltz62" targetRef="Activity_05mqk2i" />
+    <bpmn:sequenceFlow id="Flow_0mrja6t" sourceRef="StartEvent_1" targetRef="Gateway_1eltz62" />
+    <bpmn:sequenceFlow id="Flow_04bvre0" name="Cliente" sourceRef="Gateway_1yvyw4t" targetRef="Activity_0pje7xd" />
+    <bpmn:sequenceFlow id="Flow_10nf61t" name="Mercado" sourceRef="Gateway_1yvyw4t" targetRef="Activity_0tf6bjx" />
+    <bpmn:sequenceFlow id="Flow_0aowdmj" name="Não" sourceRef="Gateway_0rbt5dm" targetRef="Activity_05mqk2i" />
+    <bpmn:sequenceFlow id="Flow_142joni" name="Sim" sourceRef="Gateway_0rbt5dm" targetRef="Gateway_1yvyw4t" />
+    <bpmn:sequenceFlow id="Flow_12144we" sourceRef="Activity_1lwo7e1" targetRef="Gateway_0rbt5dm" />
+    <bpmn:sequenceFlow id="Flow_1sqf8zh" sourceRef="Activity_17xnoq3" targetRef="Event_1uey9vx" />
+    <bpmn:scriptTask id="Activity_07tfx5k" name="Atualizar lista de pedidos">
+      <bpmn:incoming>Flow_0fgmfit</bpmn:incoming>
+      <bpmn:outgoing>Flow_1ywuzy0</bpmn:outgoing>
+    </bpmn:scriptTask>
+    <bpmn:userTask id="Activity_17xnoq3" name="Finalizar pedido">
+      <bpmn:incoming>Flow_1nj7t5d</bpmn:incoming>
+      <bpmn:incoming>Flow_0hq6xls</bpmn:incoming>
+      <bpmn:outgoing>Flow_1sqf8zh</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Activity_0kisw83" name="Ver pedido">
+      <bpmn:incoming>Flow_1dh2nkm</bpmn:incoming>
+      <bpmn:incoming>Flow_1qp04c0</bpmn:incoming>
+      <bpmn:outgoing>Flow_1gc3a3m</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:scriptTask id="Activity_08ch79s" name="Realizar transação">
+      <bpmn:incoming>Flow_0eaf3lm</bpmn:incoming>
+    </bpmn:scriptTask>
+    <bpmn:manualTask id="Activity_0049zvk" name="Receber comprovante">
+      <bpmn:outgoing>Flow_0o8gq1o</bpmn:outgoing>
+    </bpmn:manualTask>
+    <bpmn:manualTask id="Activity_1inqd0m" name="Pagar com cartão ou PIX">
+      <bpmn:incoming>Flow_0i9ylir</bpmn:incoming>
+      <bpmn:incoming>Flow_1lm484q</bpmn:incoming>
+      <bpmn:outgoing>Flow_1d8wl1y</bpmn:outgoing>
+    </bpmn:manualTask>
+    <bpmn:manualTask id="Activity_1ph9scl" name="Pagar com dinheiro">
+      <bpmn:incoming>Flow_1q0lmdp</bpmn:incoming>
+      <bpmn:outgoing>Flow_0dxbdz0</bpmn:outgoing>
+    </bpmn:manualTask>
+    <bpmn:userTask id="Activity_0b9e2e9" name="Receber pagamento">
+      <bpmn:incoming>Flow_0dxbdz0</bpmn:incoming>
+      <bpmn:outgoing>Flow_0hq6xls</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Activity_0vcnt47" name="Receber  comprovante">
+      <bpmn:outgoing>Flow_1nj7t5d</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="Activity_0tf6bjx" name="Carregar plataforma mercado">
+      <bpmn:incoming>Flow_10nf61t</bpmn:incoming>
+      <bpmn:outgoing>Flow_1ocxo5x</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:task id="Activity_1i1873i" name="Abrir menu Mercado">
+      <bpmn:incoming>Flow_1ocxo5x</bpmn:incoming>
+      <bpmn:outgoing>Flow_1ooz5pw</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sendTask id="Activity_1kr3ur4" name="informar pedido aceito">
+      <bpmn:incoming>Flow_11g9nfa</bpmn:incoming>
+      <bpmn:outgoing>Flow_07i0he1</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:parallelGateway id="Gateway_0qssdcc" name="pedido aceito">
+      <bpmn:incoming>Flow_1bc9m4l</bpmn:incoming>
+      <bpmn:outgoing>Flow_03r61th</bpmn:outgoing>
+      <bpmn:outgoing>Flow_11g9nfa</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:parallelGateway id="Gateway_0dkty6l" name="despacho">
+      <bpmn:incoming>Flow_0spt6x0</bpmn:incoming>
+      <bpmn:outgoing>Flow_1am5osp</bpmn:outgoing>
+      <bpmn:outgoing>Flow_0tly11b</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:sendTask id="Activity_1k8krfy" name="informar entrega">
+      <bpmn:incoming>Flow_0tly11b</bpmn:incoming>
+      <bpmn:outgoing>Flow_1x1mn8c</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:manualTask id="Activity_1jch6x5" name="Realizar entrega">
+      <bpmn:incoming>Flow_1am5osp</bpmn:incoming>
+      <bpmn:outgoing>Flow_05tjd12</bpmn:outgoing>
+    </bpmn:manualTask>
+    <bpmn:manualTask id="Activity_1baa1ha" name="Separar produtos">
+      <bpmn:incoming>Flow_03r61th</bpmn:incoming>
+      <bpmn:outgoing>Flow_0spt6x0</bpmn:outgoing>
+    </bpmn:manualTask>
+    <bpmn:inclusiveGateway id="Gateway_0uwptwp" name="Opções">
+      <bpmn:incoming>Flow_1ooz5pw</bpmn:incoming>
+      <bpmn:outgoing>Flow_1txnp1s</bpmn:outgoing>
+      <bpmn:outgoing>Flow_0qbteu5</bpmn:outgoing>
+    </bpmn:inclusiveGateway>
+    <bpmn:userTask id="Activity_0wghuv1" name="Aceitar pedido">
+      <bpmn:incoming>Flow_1lii7fv</bpmn:incoming>
+      <bpmn:outgoing>Flow_1bc9m4l</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Activity_0vdqswz" name="Atualizar lista de produtos">
+      <bpmn:incoming>Flow_0qbteu5</bpmn:incoming>
+      <bpmn:property id="Property_0t174ed" name="__targetRef_placeholder" />
+      <bpmn:dataInputAssociation id="DataInputAssociation_0pv8nqk">
+        <bpmn:sourceRef>DataStoreReference_00o5x9k</bpmn:sourceRef>
+        <bpmn:targetRef>Property_0t174ed</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+      <bpmn:dataOutputAssociation id="DataOutputAssociation_1ttbmug">
+        <bpmn:targetRef>DataStoreReference_00o5x9k</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:userTask>
+    <bpmn:dataStoreReference id="DataStoreReference_00o5x9k" />
+    <bpmn:task id="Activity_1746ytz" name="Listar pedidos">
+      <bpmn:incoming>Flow_1txnp1s</bpmn:incoming>
+      <bpmn:incoming>Flow_1ywuzy0</bpmn:incoming>
+      <bpmn:outgoing>Flow_1lii7fv</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:serviceTask id="Activity_0pje7xd" name="Carregar plataforma cliente">
+      <bpmn:incoming>Flow_04bvre0</bpmn:incoming>
+      <bpmn:outgoing>Flow_0ef7v32</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:dataStoreReference id="DataStoreReference_11v3wxf" />
+    <bpmn:userTask id="Activity_0z0z5fq" name="Adicionar no carrinho">
+      <bpmn:incoming>Flow_0drdxs8</bpmn:incoming>
+      <bpmn:outgoing>Flow_0tp6fak</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Activity_15rp7sa" name="Buscar produtos">
+      <bpmn:incoming>Flow_08drwst</bpmn:incoming>
+      <bpmn:outgoing>Flow_0drdxs8</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="Gateway_1x8s2gv" name="Processamento ok?">
+      <bpmn:incoming>Flow_1d8wl1y</bpmn:incoming>
+      <bpmn:outgoing>Flow_1lm484q</bpmn:outgoing>
+      <bpmn:outgoing>Flow_0eaf3lm</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="Event_0v0cqvj" name="Finalizar pedido">
+      <bpmn:incoming>Flow_0o8gq1o</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:dataStoreReference id="DataStoreReference_1ky3fca" />
-    <bpmn:exclusiveGateway id="Gateway_0rbt5dm" name="Validado?">
-      <bpmn:incoming>Flow_12144we</bpmn:incoming>
-      <bpmn:outgoing>Flow_142joni</bpmn:outgoing>
-      <bpmn:outgoing>Flow_0aowdmj</bpmn:outgoing>
+    <bpmn:exclusiveGateway id="Gateway_16o7985" name="Dinheiro ou cartão ou PIX">
+      <bpmn:incoming>Flow_08b15u3</bpmn:incoming>
+      <bpmn:outgoing>Flow_1q0lmdp</bpmn:outgoing>
+      <bpmn:outgoing>Flow_0i9ylir</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:exclusiveGateway id="Gateway_1yvyw4t" name="Meercado/Cliente?">
-      <bpmn:incoming>Flow_142joni</bpmn:incoming>
-      <bpmn:outgoing>Flow_04bvre0</bpmn:outgoing>
-      <bpmn:outgoing>Flow_10nf61t</bpmn:outgoing>
+    <bpmn:manualTask id="Activity_02s8mfr" name="Realizar pagamento">
+      <bpmn:incoming>Flow_1xs213n</bpmn:incoming>
+      <bpmn:outgoing>Flow_08b15u3</bpmn:outgoing>
+    </bpmn:manualTask>
+    <bpmn:userTask id="Activity_0141ycs" name="Renomear lista">
+      <bpmn:incoming>Flow_19q8j9e</bpmn:incoming>
+      <bpmn:outgoing>Flow_1sbgar2</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:dataObjectReference id="DataObjectReference_1rtqjik" name="Formulário de cadastro" dataObjectRef="DataObject_1o2j4wt" />
+    <bpmn:dataObject id="DataObject_1o2j4wt" />
+    <bpmn:inclusiveGateway id="Gateway_0vq45s0">
+      <bpmn:incoming>Flow_0zs66mh</bpmn:incoming>
+      <bpmn:incoming>Flow_0yhw9id</bpmn:incoming>
+      <bpmn:outgoing>Flow_0f27dgx</bpmn:outgoing>
+      <bpmn:outgoing>Flow_1kc9g7v</bpmn:outgoing>
+    </bpmn:inclusiveGateway>
+    <bpmn:parallelGateway id="Gateway_1s6u191">
+      <bpmn:incoming>Flow_1rskhne</bpmn:incoming>
+      <bpmn:outgoing>Flow_1qp04c0</bpmn:outgoing>
+      <bpmn:outgoing>Flow_1nscpf9</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:userTask id="Activity_1pxypiv" name="Fazer pedido">
+      <bpmn:incoming>Flow_1wfxvah</bpmn:incoming>
+      <bpmn:outgoing>Flow_1rskhne</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:inclusiveGateway id="Gateway_1naef0f" name="Opções">
+      <bpmn:incoming>Flow_09cimdi</bpmn:incoming>
+      <bpmn:outgoing>Flow_1rhpp76</bpmn:outgoing>
+      <bpmn:outgoing>Flow_0b659ta</bpmn:outgoing>
+      <bpmn:outgoing>Flow_0tba1tg</bpmn:outgoing>
+    </bpmn:inclusiveGateway>
+    <bpmn:intermediateCatchEvent id="Event_1c084sw" name="Atualizar status pedido">
+      <bpmn:incoming>Flow_1x1mn8c</bpmn:incoming>
+      <bpmn:incoming>Flow_07i0he1</bpmn:incoming>
+      <bpmn:outgoing>Flow_1dh2nkm</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_1lnm2ja" />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:manualTask id="Activity_0kjd9pr" name="Receber pedido">
+      <bpmn:incoming>Flow_05tjd12</bpmn:incoming>
+      <bpmn:incoming>Flow_1gc3a3m</bpmn:incoming>
+      <bpmn:outgoing>Flow_1xs213n</bpmn:outgoing>
+    </bpmn:manualTask>
+    <bpmn:inclusiveGateway id="Gateway_1hzxyav" name="Lista pronta">
+      <bpmn:incoming>Flow_0zsganr</bpmn:incoming>
+      <bpmn:incoming>Flow_0fokbh1</bpmn:incoming>
+      <bpmn:incoming>Flow_1sbgar2</bpmn:incoming>
+      <bpmn:outgoing>Flow_06xi5sd</bpmn:outgoing>
+    </bpmn:inclusiveGateway>
+    <bpmn:inclusiveGateway id="Gateway_004u30l" name="Opções">
+      <bpmn:incoming>Flow_0n2k8rc</bpmn:incoming>
+      <bpmn:outgoing>Flow_1fuw974</bpmn:outgoing>
+      <bpmn:outgoing>Flow_0yup46h</bpmn:outgoing>
+      <bpmn:outgoing>Flow_19q8j9e</bpmn:outgoing>
+    </bpmn:inclusiveGateway>
+    <bpmn:userTask id="Activity_0wgvj5p" name="Revizar pedido">
+      <bpmn:incoming>Flow_1m8y58w</bpmn:incoming>
+      <bpmn:outgoing>Flow_1wfxvah</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sendTask id="Activity_1nevjpm" name="Enviar pedidos">
+      <bpmn:incoming>Flow_1nscpf9</bpmn:incoming>
+      <bpmn:outgoing>Flow_0fgmfit</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:task id="Activity_0vvb04p" name="Continuar compra">
+      <bpmn:incoming>Flow_0f27dgx</bpmn:incoming>
+      <bpmn:incoming>Flow_152d6ju</bpmn:incoming>
+      <bpmn:outgoing>Flow_1m8y58w</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="Gateway_0r2zkax" name="continuar editando?">
+      <bpmn:incoming>Flow_0p7gas1</bpmn:incoming>
+      <bpmn:outgoing>Flow_0s674oj</bpmn:outgoing>
+      <bpmn:outgoing>Flow_152d6ju</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:startEvent id="StartEvent_1" name="Inicio">
-      <bpmn:outgoing>Flow_0mrja6t</bpmn:outgoing>
-    </bpmn:startEvent>
-    <bpmn:exclusiveGateway id="Gateway_1eltz62" name="Possui cadastro?">
-      <bpmn:incoming>Flow_0mrja6t</bpmn:incoming>
-      <bpmn:outgoing>Flow_0cku4fq</bpmn:outgoing>
-      <bpmn:outgoing>Flow_1ple0a6</bpmn:outgoing>
+    <bpmn:dataStoreReference id="DataStoreReference_0so6rtd" />
+    <bpmn:scriptTask id="Activity_1pwskox" name="Salvar Lista">
+      <bpmn:incoming>Flow_06xi5sd</bpmn:incoming>
+      <bpmn:outgoing>Flow_0p7gas1</bpmn:outgoing>
+      <bpmn:property id="Property_0lkin0m" name="__targetRef_placeholder" />
+      <bpmn:dataInputAssociation id="DataInputAssociation_0ioo6pp">
+        <bpmn:sourceRef>DataStoreReference_0so6rtd</bpmn:sourceRef>
+        <bpmn:targetRef>Property_0lkin0m</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+      <bpmn:dataOutputAssociation id="DataOutputAssociation_0e3p7sc">
+        <bpmn:targetRef>DataStoreReference_0so6rtd</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:scriptTask>
+    <bpmn:userTask id="Activity_1em2c63" name="Adicionar itens">
+      <bpmn:incoming>Flow_0yup46h</bpmn:incoming>
+      <bpmn:outgoing>Flow_0zsganr</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Activity_1x5a8pv" name="Remover itens">
+      <bpmn:incoming>Flow_1fuw974</bpmn:incoming>
+      <bpmn:outgoing>Flow_0fokbh1</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:scriptTask id="Activity_09gvwhe" name="Atualizar cadastro">
+      <bpmn:incoming>Flow_1on6ese</bpmn:incoming>
+      <bpmn:outgoing>Flow_0ggwug6</bpmn:outgoing>
+      <bpmn:property id="Property_1gfq7sg" name="__targetRef_placeholder" />
+      <bpmn:dataInputAssociation id="DataInputAssociation_0op1diw">
+        <bpmn:sourceRef>DataStoreReference_11v3wxf</bpmn:sourceRef>
+        <bpmn:targetRef>Property_1gfq7sg</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+      <bpmn:dataOutputAssociation id="DataOutputAssociation_0pm9f5g">
+        <bpmn:targetRef>DataStoreReference_11v3wxf</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:scriptTask>
+    <bpmn:dataStoreReference id="DataStoreReference_18zg4e1" />
+    <bpmn:scriptTask id="Activity_03g4qg7" name="Criar lista">
+      <bpmn:incoming>Flow_0tp6fak</bpmn:incoming>
+      <bpmn:outgoing>Flow_0yhw9id</bpmn:outgoing>
+      <bpmn:property id="Property_0llhjpo" name="__targetRef_placeholder" />
+      <bpmn:dataInputAssociation id="DataInputAssociation_1yj1wqk">
+        <bpmn:sourceRef>DataStoreReference_18zg4e1</bpmn:sourceRef>
+        <bpmn:targetRef>Property_0llhjpo</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+      <bpmn:dataOutputAssociation id="DataOutputAssociation_04azkk3">
+        <bpmn:targetRef>DataStoreReference_18zg4e1</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:scriptTask>
+    <bpmn:serviceTask id="Activity_0srl0id" name="Visualizar setores">
+      <bpmn:incoming>Flow_0tba1tg</bpmn:incoming>
+      <bpmn:outgoing>Flow_08drwst</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:dataObjectReference id="DataObjectReference_1gwp3vf" name="Formulário de cadastro" dataObjectRef="DataObject_0uytpb5" />
+    <bpmn:dataObject id="DataObject_0uytpb5" />
+    <bpmn:task id="Activity_01cq0lc" name="Personalizar lista">
+      <bpmn:incoming>Flow_1kc9g7v</bpmn:incoming>
+      <bpmn:incoming>Flow_0s674oj</bpmn:incoming>
+      <bpmn:outgoing>Flow_0n2k8rc</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:userTask id="Activity_19y5yxn" name="Selecionar lista">
+      <bpmn:incoming>Flow_1immezm</bpmn:incoming>
+      <bpmn:outgoing>Flow_0zs66mh</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="Activity_0v1sxr7" name="Visualizar listas">
+      <bpmn:incoming>Flow_1rhpp76</bpmn:incoming>
+      <bpmn:outgoing>Flow_1immezm</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:userTask id="Activity_08tu5an" name="Editar cadastro">
+      <bpmn:incoming>Flow_16xa89k</bpmn:incoming>
+      <bpmn:outgoing>Flow_1on6ese</bpmn:outgoing>
+      <bpmn:dataOutputAssociation id="DataOutputAssociation_1lp0b6x">
+        <bpmn:targetRef>DataObjectReference_1gwp3vf</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="Gateway_1oz4zra" name="Cadastro concluído?">
+      <bpmn:incoming>Flow_0ggwug6</bpmn:incoming>
+      <bpmn:outgoing>Flow_0gnng8k</bpmn:outgoing>
+      <bpmn:outgoing>Flow_0fuirv9</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:task id="Activity_03a2rv3" name="Ver cadastro">
+      <bpmn:incoming>Flow_0b659ta</bpmn:incoming>
+      <bpmn:incoming>Flow_0gnng8k</bpmn:incoming>
+      <bpmn:outgoing>Flow_16xa89k</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_0v26ngc" name="Abrir menu cliente">
+      <bpmn:incoming>Flow_0fuirv9</bpmn:incoming>
+      <bpmn:incoming>Flow_0ef7v32</bpmn:incoming>
+      <bpmn:outgoing>Flow_09cimdi</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:scriptTask id="Activity_1lwo7e1" name="Validar login">
+      <bpmn:incoming>Flow_1cc7cca</bpmn:incoming>
+      <bpmn:outgoing>Flow_12144we</bpmn:outgoing>
+      <bpmn:property id="Property_1w3osz9" name="__targetRef_placeholder" />
+      <bpmn:dataInputAssociation id="DataInputAssociation_1j87kyl">
+        <bpmn:sourceRef>DataStoreReference_1ky3fca</bpmn:sourceRef>
+        <bpmn:targetRef>Property_1w3osz9</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+      <bpmn:dataOutputAssociation id="DataOutputAssociation_0q56gn4">
+        <bpmn:targetRef>DataStoreReference_1ky3fca</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:scriptTask>
+    <bpmn:scriptTask id="Activity_07unj0q" name="Validar cadastro">
+      <bpmn:incoming>Flow_02adwg7</bpmn:incoming>
+      <bpmn:outgoing>Flow_0l07hky</bpmn:outgoing>
+      <bpmn:property id="Property_1gq87hc" name="__targetRef_placeholder" />
+      <bpmn:dataInputAssociation id="DataInputAssociation_013g18f">
+        <bpmn:sourceRef>DataStoreReference_0twnyty</bpmn:sourceRef>
+        <bpmn:targetRef>Property_1gq87hc</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+      <bpmn:dataOutputAssociation id="DataOutputAssociation_0onprox">
+        <bpmn:targetRef>DataStoreReference_0twnyty</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:scriptTask>
+    <bpmn:dataObjectReference id="DataObjectReference_1veccqh" name="Formulário de login" dataObjectRef="DataObject_089gzcs" />
+    <bpmn:dataObject id="DataObject_089gzcs" />
+    <bpmn:userTask id="Activity_0i7bis5" name="Cadastrar">
+      <bpmn:extensionElements>
+        <zeebe:formDefinition formId="2" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1ple0a6</bpmn:incoming>
+      <bpmn:incoming>Flow_1rjet07</bpmn:incoming>
+      <bpmn:outgoing>Flow_02adwg7</bpmn:outgoing>
+      <bpmn:dataOutputAssociation id="DataOutputAssociation_0mqwvrs">
+        <bpmn:targetRef>DataObjectReference_1rtqjik</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:userTask>
+    <bpmn:dataStoreReference id="DataStoreReference_0twnyty" />
+    <bpmn:exclusiveGateway id="Gateway_0u6mis1" name="Validado?">
+      <bpmn:incoming>Flow_0l07hky</bpmn:incoming>
+      <bpmn:outgoing>Flow_18j318p</bpmn:outgoing>
+      <bpmn:outgoing>Flow_1rjet07</bpmn:outgoing>
     </bpmn:exclusiveGateway>
     <bpmn:userTask id="Activity_05mqk2i" name="Logar no sistema">
       <bpmn:extensionElements>
@@ -119,407 +498,28 @@
         <bpmn:targetRef>DataObjectReference_1veccqh</bpmn:targetRef>
       </bpmn:dataOutputAssociation>
     </bpmn:userTask>
-    <bpmn:exclusiveGateway id="Gateway_0u6mis1" name="Validado?">
-      <bpmn:incoming>Flow_0l07hky</bpmn:incoming>
-      <bpmn:outgoing>Flow_18j318p</bpmn:outgoing>
-      <bpmn:outgoing>Flow_1rjet07</bpmn:outgoing>
+    <bpmn:exclusiveGateway id="Gateway_1eltz62" name="Possui cadastro?">
+      <bpmn:incoming>Flow_0mrja6t</bpmn:incoming>
+      <bpmn:outgoing>Flow_0cku4fq</bpmn:outgoing>
+      <bpmn:outgoing>Flow_1ple0a6</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:dataStoreReference id="DataStoreReference_0twnyty" />
-    <bpmn:userTask id="Activity_0i7bis5" name="Cadastrar">
-      <bpmn:extensionElements>
-        <zeebe:formDefinition formId="2" />
-      </bpmn:extensionElements>
-      <bpmn:incoming>Flow_1ple0a6</bpmn:incoming>
-      <bpmn:incoming>Flow_1rjet07</bpmn:incoming>
-      <bpmn:outgoing>Flow_02adwg7</bpmn:outgoing>
-      <bpmn:dataOutputAssociation id="DataOutputAssociation_0mqwvrs">
-        <bpmn:targetRef>DataObjectReference_1rtqjik</bpmn:targetRef>
-      </bpmn:dataOutputAssociation>
-    </bpmn:userTask>
-    <bpmn:dataObjectReference id="DataObjectReference_1veccqh" name="Formulário de login" dataObjectRef="DataObject_089gzcs" />
-    <bpmn:dataObject id="DataObject_089gzcs" />
-    <bpmn:scriptTask id="Activity_07unj0q" name="Validar cadastro">
-      <bpmn:incoming>Flow_02adwg7</bpmn:incoming>
-      <bpmn:outgoing>Flow_0l07hky</bpmn:outgoing>
-      <bpmn:property id="Property_1gq87hc" name="__targetRef_placeholder" />
-      <bpmn:dataInputAssociation id="DataInputAssociation_013g18f">
-        <bpmn:sourceRef>DataStoreReference_0twnyty</bpmn:sourceRef>
-        <bpmn:targetRef>Property_1gq87hc</bpmn:targetRef>
-      </bpmn:dataInputAssociation>
-      <bpmn:dataOutputAssociation id="DataOutputAssociation_0onprox">
-        <bpmn:targetRef>DataStoreReference_0twnyty</bpmn:targetRef>
-      </bpmn:dataOutputAssociation>
-    </bpmn:scriptTask>
-    <bpmn:scriptTask id="Activity_1lwo7e1" name="Validar login">
-      <bpmn:incoming>Flow_1cc7cca</bpmn:incoming>
-      <bpmn:outgoing>Flow_12144we</bpmn:outgoing>
-      <bpmn:property id="Property_1w3osz9" name="__targetRef_placeholder" />
-      <bpmn:dataInputAssociation id="DataInputAssociation_1j87kyl">
-        <bpmn:sourceRef>DataStoreReference_1ky3fca</bpmn:sourceRef>
-        <bpmn:targetRef>Property_1w3osz9</bpmn:targetRef>
-      </bpmn:dataInputAssociation>
-      <bpmn:dataOutputAssociation id="DataOutputAssociation_0q56gn4">
-        <bpmn:targetRef>DataStoreReference_1ky3fca</bpmn:targetRef>
-      </bpmn:dataOutputAssociation>
-    </bpmn:scriptTask>
-    <bpmn:task id="Activity_0v26ngc" name="Abrir menu cliente">
-      <bpmn:incoming>Flow_0fuirv9</bpmn:incoming>
-      <bpmn:incoming>Flow_0ef7v32</bpmn:incoming>
-      <bpmn:outgoing>Flow_09cimdi</bpmn:outgoing>
-    </bpmn:task>
-    <bpmn:task id="Activity_03a2rv3" name="Ver cadastro">
-      <bpmn:incoming>Flow_0b659ta</bpmn:incoming>
-      <bpmn:incoming>Flow_0gnng8k</bpmn:incoming>
-      <bpmn:outgoing>Flow_16xa89k</bpmn:outgoing>
-    </bpmn:task>
-    <bpmn:exclusiveGateway id="Gateway_1oz4zra" name="Cadastro concluído?">
-      <bpmn:incoming>Flow_0ggwug6</bpmn:incoming>
-      <bpmn:outgoing>Flow_0gnng8k</bpmn:outgoing>
-      <bpmn:outgoing>Flow_0fuirv9</bpmn:outgoing>
+    <bpmn:startEvent id="StartEvent_1" name="Inicio">
+      <bpmn:outgoing>Flow_0mrja6t</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:exclusiveGateway id="Gateway_1yvyw4t" name="Meercado/Cliente?">
+      <bpmn:incoming>Flow_142joni</bpmn:incoming>
+      <bpmn:outgoing>Flow_04bvre0</bpmn:outgoing>
+      <bpmn:outgoing>Flow_10nf61t</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:userTask id="Activity_08tu5an" name="Editar cadastro">
-      <bpmn:incoming>Flow_16xa89k</bpmn:incoming>
-      <bpmn:outgoing>Flow_1on6ese</bpmn:outgoing>
-      <bpmn:dataOutputAssociation id="DataOutputAssociation_1lp0b6x">
-        <bpmn:targetRef>DataObjectReference_1gwp3vf</bpmn:targetRef>
-      </bpmn:dataOutputAssociation>
-    </bpmn:userTask>
-    <bpmn:serviceTask id="Activity_0v1sxr7" name="Visualizar listas">
-      <bpmn:incoming>Flow_1rhpp76</bpmn:incoming>
-      <bpmn:outgoing>Flow_1immezm</bpmn:outgoing>
-    </bpmn:serviceTask>
-    <bpmn:userTask id="Activity_19y5yxn" name="Selecionar lista">
-      <bpmn:incoming>Flow_1immezm</bpmn:incoming>
-      <bpmn:outgoing>Flow_0zs66mh</bpmn:outgoing>
-    </bpmn:userTask>
-    <bpmn:task id="Activity_01cq0lc" name="Personalizar lista">
-      <bpmn:incoming>Flow_1kc9g7v</bpmn:incoming>
-      <bpmn:incoming>Flow_0s674oj</bpmn:incoming>
-      <bpmn:outgoing>Flow_0n2k8rc</bpmn:outgoing>
-    </bpmn:task>
-    <bpmn:dataObjectReference id="DataObjectReference_1gwp3vf" name="Formulário de cadastro" dataObjectRef="DataObject_0uytpb5" />
-    <bpmn:dataObject id="DataObject_0uytpb5" />
-    <bpmn:serviceTask id="Activity_0srl0id" name="Visualizar setores">
-      <bpmn:incoming>Flow_0tba1tg</bpmn:incoming>
-      <bpmn:outgoing>Flow_08drwst</bpmn:outgoing>
-    </bpmn:serviceTask>
-    <bpmn:scriptTask id="Activity_03g4qg7" name="Criar lista">
-      <bpmn:incoming>Flow_0tp6fak</bpmn:incoming>
-      <bpmn:outgoing>Flow_0yhw9id</bpmn:outgoing>
-      <bpmn:property id="Property_0llhjpo" name="__targetRef_placeholder" />
-      <bpmn:dataInputAssociation id="DataInputAssociation_1yj1wqk">
-        <bpmn:sourceRef>DataStoreReference_18zg4e1</bpmn:sourceRef>
-        <bpmn:targetRef>Property_0llhjpo</bpmn:targetRef>
-      </bpmn:dataInputAssociation>
-      <bpmn:dataOutputAssociation id="DataOutputAssociation_04azkk3">
-        <bpmn:targetRef>DataStoreReference_18zg4e1</bpmn:targetRef>
-      </bpmn:dataOutputAssociation>
-    </bpmn:scriptTask>
-    <bpmn:dataStoreReference id="DataStoreReference_18zg4e1" />
-    <bpmn:scriptTask id="Activity_09gvwhe" name="Atualizar cadastro">
-      <bpmn:incoming>Flow_1on6ese</bpmn:incoming>
-      <bpmn:outgoing>Flow_0ggwug6</bpmn:outgoing>
-      <bpmn:property id="Property_1gfq7sg" name="__targetRef_placeholder" />
-      <bpmn:dataInputAssociation id="DataInputAssociation_0op1diw">
-        <bpmn:sourceRef>DataStoreReference_11v3wxf</bpmn:sourceRef>
-        <bpmn:targetRef>Property_1gfq7sg</bpmn:targetRef>
-      </bpmn:dataInputAssociation>
-      <bpmn:dataOutputAssociation id="DataOutputAssociation_0pm9f5g">
-        <bpmn:targetRef>DataStoreReference_11v3wxf</bpmn:targetRef>
-      </bpmn:dataOutputAssociation>
-    </bpmn:scriptTask>
-    <bpmn:userTask id="Activity_1x5a8pv" name="Remover itens">
-      <bpmn:incoming>Flow_1fuw974</bpmn:incoming>
-      <bpmn:outgoing>Flow_0fokbh1</bpmn:outgoing>
-    </bpmn:userTask>
-    <bpmn:userTask id="Activity_1em2c63" name="Adicionar itens">
-      <bpmn:incoming>Flow_0yup46h</bpmn:incoming>
-      <bpmn:outgoing>Flow_0zsganr</bpmn:outgoing>
-    </bpmn:userTask>
-    <bpmn:scriptTask id="Activity_1pwskox" name="Salvar Lista">
-      <bpmn:incoming>Flow_06xi5sd</bpmn:incoming>
-      <bpmn:outgoing>Flow_0p7gas1</bpmn:outgoing>
-      <bpmn:property id="Property_0lkin0m" name="__targetRef_placeholder" />
-      <bpmn:dataInputAssociation id="DataInputAssociation_0ioo6pp">
-        <bpmn:sourceRef>DataStoreReference_0so6rtd</bpmn:sourceRef>
-        <bpmn:targetRef>Property_0lkin0m</bpmn:targetRef>
-      </bpmn:dataInputAssociation>
-      <bpmn:dataOutputAssociation id="DataOutputAssociation_0e3p7sc">
-        <bpmn:targetRef>DataStoreReference_0so6rtd</bpmn:targetRef>
-      </bpmn:dataOutputAssociation>
-    </bpmn:scriptTask>
-    <bpmn:dataStoreReference id="DataStoreReference_0so6rtd" />
-    <bpmn:exclusiveGateway id="Gateway_0r2zkax" name="continuar editando?">
-      <bpmn:incoming>Flow_0p7gas1</bpmn:incoming>
-      <bpmn:outgoing>Flow_0s674oj</bpmn:outgoing>
-      <bpmn:outgoing>Flow_152d6ju</bpmn:outgoing>
+    <bpmn:exclusiveGateway id="Gateway_0rbt5dm" name="Validado?">
+      <bpmn:incoming>Flow_12144we</bpmn:incoming>
+      <bpmn:outgoing>Flow_142joni</bpmn:outgoing>
+      <bpmn:outgoing>Flow_0aowdmj</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:task id="Activity_0vvb04p" name="Continuar compra">
-      <bpmn:incoming>Flow_0f27dgx</bpmn:incoming>
-      <bpmn:incoming>Flow_152d6ju</bpmn:incoming>
-      <bpmn:outgoing>Flow_1m8y58w</bpmn:outgoing>
-    </bpmn:task>
-    <bpmn:sendTask id="Activity_1nevjpm" name="Enviar pedidos">
-      <bpmn:incoming>Flow_1nscpf9</bpmn:incoming>
-      <bpmn:outgoing>Flow_0fgmfit</bpmn:outgoing>
-    </bpmn:sendTask>
-    <bpmn:userTask id="Activity_0wgvj5p" name="Revizar pedido">
-      <bpmn:incoming>Flow_1m8y58w</bpmn:incoming>
-      <bpmn:outgoing>Flow_1wfxvah</bpmn:outgoing>
-    </bpmn:userTask>
-    <bpmn:inclusiveGateway id="Gateway_004u30l" name="Opções">
-      <bpmn:incoming>Flow_0n2k8rc</bpmn:incoming>
-      <bpmn:outgoing>Flow_1fuw974</bpmn:outgoing>
-      <bpmn:outgoing>Flow_0yup46h</bpmn:outgoing>
-      <bpmn:outgoing>Flow_19q8j9e</bpmn:outgoing>
-    </bpmn:inclusiveGateway>
-    <bpmn:inclusiveGateway id="Gateway_1hzxyav" name="Lista pronta">
-      <bpmn:incoming>Flow_0zsganr</bpmn:incoming>
-      <bpmn:incoming>Flow_0fokbh1</bpmn:incoming>
-      <bpmn:incoming>Flow_1sbgar2</bpmn:incoming>
-      <bpmn:outgoing>Flow_06xi5sd</bpmn:outgoing>
-    </bpmn:inclusiveGateway>
-    <bpmn:manualTask id="Activity_0kjd9pr" name="Receber pedido">
-      <bpmn:incoming>Flow_05tjd12</bpmn:incoming>
-      <bpmn:incoming>Flow_1gc3a3m</bpmn:incoming>
-      <bpmn:outgoing>Flow_1xs213n</bpmn:outgoing>
-    </bpmn:manualTask>
-    <bpmn:intermediateCatchEvent id="Event_1c084sw" name="Atualizar status pedido">
-      <bpmn:incoming>Flow_1x1mn8c</bpmn:incoming>
-      <bpmn:incoming>Flow_07i0he1</bpmn:incoming>
-      <bpmn:outgoing>Flow_1dh2nkm</bpmn:outgoing>
-      <bpmn:messageEventDefinition id="MessageEventDefinition_1lnm2ja" />
-    </bpmn:intermediateCatchEvent>
-    <bpmn:inclusiveGateway id="Gateway_1naef0f" name="Opções">
-      <bpmn:incoming>Flow_09cimdi</bpmn:incoming>
-      <bpmn:outgoing>Flow_1rhpp76</bpmn:outgoing>
-      <bpmn:outgoing>Flow_0b659ta</bpmn:outgoing>
-      <bpmn:outgoing>Flow_0tba1tg</bpmn:outgoing>
-    </bpmn:inclusiveGateway>
-    <bpmn:userTask id="Activity_1pxypiv" name="Fazer pedido">
-      <bpmn:incoming>Flow_1wfxvah</bpmn:incoming>
-      <bpmn:outgoing>Flow_1rskhne</bpmn:outgoing>
-    </bpmn:userTask>
-    <bpmn:parallelGateway id="Gateway_1s6u191">
-      <bpmn:incoming>Flow_1rskhne</bpmn:incoming>
-      <bpmn:outgoing>Flow_1qp04c0</bpmn:outgoing>
-      <bpmn:outgoing>Flow_1nscpf9</bpmn:outgoing>
-    </bpmn:parallelGateway>
-    <bpmn:inclusiveGateway id="Gateway_0vq45s0">
-      <bpmn:incoming>Flow_0zs66mh</bpmn:incoming>
-      <bpmn:incoming>Flow_0yhw9id</bpmn:incoming>
-      <bpmn:outgoing>Flow_0f27dgx</bpmn:outgoing>
-      <bpmn:outgoing>Flow_1kc9g7v</bpmn:outgoing>
-    </bpmn:inclusiveGateway>
-    <bpmn:sequenceFlow id="Flow_10nf61t" name="Mercado" sourceRef="Gateway_1yvyw4t" targetRef="Activity_0tf6bjx" />
-    <bpmn:sequenceFlow id="Flow_04bvre0" name="Cliente" sourceRef="Gateway_1yvyw4t" targetRef="Activity_0pje7xd" />
-    <bpmn:sequenceFlow id="Flow_0ef7v32" sourceRef="Activity_0pje7xd" targetRef="Activity_0v26ngc" />
-    <bpmn:sequenceFlow id="Flow_0hq6xls" sourceRef="Activity_0b9e2e9" targetRef="Activity_17xnoq3" />
-    <bpmn:sequenceFlow id="Flow_1x1mn8c" sourceRef="Activity_1k8krfy" targetRef="Event_1c084sw" />
-    <bpmn:sequenceFlow id="Flow_12144we" sourceRef="Activity_1lwo7e1" targetRef="Gateway_0rbt5dm" />
-    <bpmn:sequenceFlow id="Flow_142joni" name="Sim" sourceRef="Gateway_0rbt5dm" targetRef="Gateway_1yvyw4t" />
-    <bpmn:sequenceFlow id="Flow_0aowdmj" name="Não" sourceRef="Gateway_0rbt5dm" targetRef="Activity_05mqk2i" />
-    <bpmn:sequenceFlow id="Flow_0mrja6t" sourceRef="StartEvent_1" targetRef="Gateway_1eltz62" />
-    <bpmn:sequenceFlow id="Flow_0cku4fq" name="Sim" sourceRef="Gateway_1eltz62" targetRef="Activity_05mqk2i" />
-    <bpmn:sequenceFlow id="Flow_1ple0a6" name="Não" sourceRef="Gateway_1eltz62" targetRef="Activity_0i7bis5" />
-    <bpmn:sequenceFlow id="Flow_18j318p" name="Sim" sourceRef="Gateway_0u6mis1" targetRef="Activity_05mqk2i" />
-    <bpmn:sequenceFlow id="Flow_1cc7cca" sourceRef="Activity_05mqk2i" targetRef="Activity_1lwo7e1" />
-    <bpmn:sequenceFlow id="Flow_0l07hky" sourceRef="Activity_07unj0q" targetRef="Gateway_0u6mis1" />
-    <bpmn:sequenceFlow id="Flow_1rjet07" name="Não" sourceRef="Gateway_0u6mis1" targetRef="Activity_0i7bis5" />
-    <bpmn:sequenceFlow id="Flow_02adwg7" sourceRef="Activity_0i7bis5" targetRef="Activity_07unj0q" />
-    <bpmn:sequenceFlow id="Flow_05tjd12" sourceRef="Activity_1jch6x5" targetRef="Activity_0kjd9pr" />
-    <bpmn:sequenceFlow id="Flow_0fuirv9" name="Sim" sourceRef="Gateway_1oz4zra" targetRef="Activity_0v26ngc" />
-    <bpmn:sequenceFlow id="Flow_09cimdi" sourceRef="Activity_0v26ngc" targetRef="Gateway_1naef0f" />
-    <bpmn:sequenceFlow id="Flow_0b659ta" sourceRef="Gateway_1naef0f" targetRef="Activity_03a2rv3" />
-    <bpmn:sequenceFlow id="Flow_0gnng8k" name="Não" sourceRef="Gateway_1oz4zra" targetRef="Activity_03a2rv3" />
-    <bpmn:sequenceFlow id="Flow_16xa89k" sourceRef="Activity_03a2rv3" targetRef="Activity_08tu5an" />
-    <bpmn:sequenceFlow id="Flow_0ggwug6" sourceRef="Activity_09gvwhe" targetRef="Gateway_1oz4zra" />
-    <bpmn:sequenceFlow id="Flow_1on6ese" sourceRef="Activity_08tu5an" targetRef="Activity_09gvwhe" />
-    <bpmn:sequenceFlow id="Flow_1rhpp76" sourceRef="Gateway_1naef0f" targetRef="Activity_0v1sxr7" />
-    <bpmn:sequenceFlow id="Flow_1immezm" sourceRef="Activity_0v1sxr7" targetRef="Activity_19y5yxn" />
-    <bpmn:sequenceFlow id="Flow_0drdxs8" sourceRef="Activity_15rp7sa" targetRef="Activity_0z0z5fq" />
-    <bpmn:sequenceFlow id="Flow_0tp6fak" sourceRef="Activity_0z0z5fq" targetRef="Activity_03g4qg7" />
-    <bpmn:sequenceFlow id="Flow_08drwst" sourceRef="Activity_0srl0id" targetRef="Activity_15rp7sa" />
-    <bpmn:sequenceFlow id="Flow_0zs66mh" sourceRef="Activity_19y5yxn" targetRef="Gateway_0vq45s0" />
-    <bpmn:sequenceFlow id="Flow_1kc9g7v" name="Edita lista" sourceRef="Gateway_0vq45s0" targetRef="Activity_01cq0lc" />
-    <bpmn:sequenceFlow id="Flow_0s674oj" name="Sim" sourceRef="Gateway_0r2zkax" targetRef="Activity_01cq0lc" />
-    <bpmn:sequenceFlow id="Flow_0n2k8rc" sourceRef="Activity_01cq0lc" targetRef="Gateway_004u30l" />
-    <bpmn:sequenceFlow id="Flow_0tba1tg" sourceRef="Gateway_1naef0f" targetRef="Activity_0srl0id" />
-    <bpmn:sequenceFlow id="Flow_0yhw9id" sourceRef="Activity_03g4qg7" targetRef="Gateway_0vq45s0" />
-    <bpmn:sequenceFlow id="Flow_1fuw974" sourceRef="Gateway_004u30l" targetRef="Activity_1x5a8pv" />
-    <bpmn:sequenceFlow id="Flow_0fokbh1" sourceRef="Activity_1x5a8pv" targetRef="Gateway_1hzxyav" />
-    <bpmn:sequenceFlow id="Flow_0yup46h" sourceRef="Gateway_004u30l" targetRef="Activity_1em2c63" />
-    <bpmn:sequenceFlow id="Flow_0zsganr" sourceRef="Activity_1em2c63" targetRef="Gateway_1hzxyav" />
-    <bpmn:sequenceFlow id="Flow_19q8j9e" sourceRef="Gateway_004u30l" targetRef="Activity_0141ycs" />
-    <bpmn:sequenceFlow id="Flow_1sbgar2" sourceRef="Activity_0141ycs" targetRef="Gateway_1hzxyav" />
-    <bpmn:sequenceFlow id="Flow_06xi5sd" sourceRef="Gateway_1hzxyav" targetRef="Activity_1pwskox" />
-    <bpmn:sequenceFlow id="Flow_0p7gas1" sourceRef="Activity_1pwskox" targetRef="Gateway_0r2zkax" />
-    <bpmn:sequenceFlow id="Flow_152d6ju" name="Não" sourceRef="Gateway_0r2zkax" targetRef="Activity_0vvb04p" />
-    <bpmn:sequenceFlow id="Flow_0f27dgx" name="continue" sourceRef="Gateway_0vq45s0" targetRef="Activity_0vvb04p" />
-    <bpmn:sequenceFlow id="Flow_1m8y58w" sourceRef="Activity_0vvb04p" targetRef="Activity_0wgvj5p" />
-    <bpmn:sequenceFlow id="Flow_0fgmfit" sourceRef="Activity_1nevjpm" targetRef="Activity_07tfx5k" />
-    <bpmn:sequenceFlow id="Flow_1nscpf9" sourceRef="Gateway_1s6u191" targetRef="Activity_1nevjpm" />
-    <bpmn:sequenceFlow id="Flow_1wfxvah" sourceRef="Activity_0wgvj5p" targetRef="Activity_1pxypiv" />
-    <bpmn:sequenceFlow id="Flow_1gc3a3m" sourceRef="Activity_0kisw83" targetRef="Activity_0kjd9pr" />
-    <bpmn:sequenceFlow id="Flow_1xs213n" sourceRef="Activity_0kjd9pr" targetRef="Activity_02s8mfr" />
-    <bpmn:sequenceFlow id="Flow_1dh2nkm" sourceRef="Event_1c084sw" targetRef="Activity_0kisw83" />
-    <bpmn:sequenceFlow id="Flow_1qp04c0" sourceRef="Gateway_1s6u191" targetRef="Activity_0kisw83" />
-    <bpmn:sequenceFlow id="Flow_1rskhne" sourceRef="Activity_1pxypiv" targetRef="Gateway_1s6u191" />
-    <bpmn:sequenceFlow id="Flow_1ywuzy0" sourceRef="Activity_07tfx5k" targetRef="Activity_1746ytz" />
-    <bpmn:dataObjectReference id="DataObjectReference_1rtqjik" name="Formulário de cadastro" dataObjectRef="DataObject_1o2j4wt" />
-    <bpmn:dataObject id="DataObject_1o2j4wt" />
-    <bpmn:userTask id="Activity_0141ycs" name="Renomear lista">
-      <bpmn:incoming>Flow_19q8j9e</bpmn:incoming>
-      <bpmn:outgoing>Flow_1sbgar2</bpmn:outgoing>
-    </bpmn:userTask>
-    <bpmn:sequenceFlow id="Flow_0dxbdz0" sourceRef="Activity_1ph9scl" targetRef="Activity_0b9e2e9" />
-    <bpmn:sequenceFlow id="Flow_1sqf8zh" sourceRef="Activity_17xnoq3" targetRef="Event_1uey9vx" />
-    <bpmn:manualTask id="Activity_02s8mfr" name="Realizar pagamento">
-      <bpmn:incoming>Flow_1xs213n</bpmn:incoming>
-      <bpmn:outgoing>Flow_08b15u3</bpmn:outgoing>
-    </bpmn:manualTask>
-    <bpmn:exclusiveGateway id="Gateway_16o7985" name="Dinheiro ou cartão ou PIX">
-      <bpmn:incoming>Flow_08b15u3</bpmn:incoming>
-      <bpmn:outgoing>Flow_1q0lmdp</bpmn:outgoing>
-      <bpmn:outgoing>Flow_0i9ylir</bpmn:outgoing>
-    </bpmn:exclusiveGateway>
-    <bpmn:sequenceFlow id="Flow_08b15u3" sourceRef="Activity_02s8mfr" targetRef="Gateway_16o7985" />
-    <bpmn:sequenceFlow id="Flow_1q0lmdp" name="Dinheiro" sourceRef="Gateway_16o7985" targetRef="Activity_1ph9scl" />
-    <bpmn:sequenceFlow id="Flow_0i9ylir" name="Cartão/PIX" sourceRef="Gateway_16o7985" targetRef="Activity_1inqd0m" />
-    <bpmn:sequenceFlow id="Flow_1lm484q" name="Não" sourceRef="Gateway_1x8s2gv" targetRef="Activity_1inqd0m" />
-    <bpmn:sequenceFlow id="Flow_1d8wl1y" sourceRef="Activity_1inqd0m" targetRef="Gateway_1x8s2gv" />
-    <bpmn:sequenceFlow id="Flow_1nj7t5d" sourceRef="Activity_0vcnt47" targetRef="Activity_17xnoq3" />
-    <bpmn:sequenceFlow id="Flow_0o8gq1o" sourceRef="Activity_0049zvk" targetRef="Event_0v0cqvj" />
-    <bpmn:endEvent id="Event_0v0cqvj" name="Finalizar pedido">
-      <bpmn:incoming>Flow_0o8gq1o</bpmn:incoming>
+    <bpmn:dataStoreReference id="DataStoreReference_1ky3fca" />
+    <bpmn:endEvent id="Event_1uey9vx" name="Fim">
+      <bpmn:incoming>Flow_1sqf8zh</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:exclusiveGateway id="Gateway_1x8s2gv" name="Processamento ok?">
-      <bpmn:incoming>Flow_1d8wl1y</bpmn:incoming>
-      <bpmn:outgoing>Flow_1lm484q</bpmn:outgoing>
-      <bpmn:outgoing>Flow_0eaf3lm</bpmn:outgoing>
-    </bpmn:exclusiveGateway>
-    <bpmn:sequenceFlow id="Flow_0eaf3lm" sourceRef="Gateway_1x8s2gv" targetRef="Activity_08ch79s" />
-    <bpmn:userTask id="Activity_15rp7sa" name="Buscar produtos">
-      <bpmn:incoming>Flow_08drwst</bpmn:incoming>
-      <bpmn:outgoing>Flow_0drdxs8</bpmn:outgoing>
-    </bpmn:userTask>
-    <bpmn:userTask id="Activity_0z0z5fq" name="Selecionar produtos">
-      <bpmn:incoming>Flow_0drdxs8</bpmn:incoming>
-      <bpmn:outgoing>Flow_0tp6fak</bpmn:outgoing>
-    </bpmn:userTask>
-    <bpmn:dataStoreReference id="DataStoreReference_11v3wxf" />
-    <bpmn:serviceTask id="Activity_0pje7xd" name="Carregar plataforma cliente">
-      <bpmn:incoming>Flow_04bvre0</bpmn:incoming>
-      <bpmn:outgoing>Flow_0ef7v32</bpmn:outgoing>
-    </bpmn:serviceTask>
-    <bpmn:sequenceFlow id="Flow_1bc9m4l" sourceRef="Activity_0wghuv1" targetRef="Gateway_0qssdcc" />
-    <bpmn:sequenceFlow id="Flow_07i0he1" sourceRef="Activity_1kr3ur4" targetRef="Event_1c084sw" />
-    <bpmn:sequenceFlow id="Flow_1ocxo5x" sourceRef="Activity_0tf6bjx" targetRef="Activity_1i1873i" />
-    <bpmn:task id="Activity_1746ytz" name="Listar pedidos">
-      <bpmn:incoming>Flow_1txnp1s</bpmn:incoming>
-      <bpmn:incoming>Flow_1ywuzy0</bpmn:incoming>
-      <bpmn:outgoing>Flow_1lii7fv</bpmn:outgoing>
-    </bpmn:task>
-    <bpmn:dataStoreReference id="DataStoreReference_00o5x9k" />
-    <bpmn:userTask id="Activity_0vdqswz" name="Atualizar lista de produtos">
-      <bpmn:incoming>Flow_0qbteu5</bpmn:incoming>
-      <bpmn:property id="Property_0t174ed" name="__targetRef_placeholder" />
-      <bpmn:dataInputAssociation id="DataInputAssociation_0pv8nqk">
-        <bpmn:sourceRef>DataStoreReference_00o5x9k</bpmn:sourceRef>
-        <bpmn:targetRef>Property_0t174ed</bpmn:targetRef>
-      </bpmn:dataInputAssociation>
-      <bpmn:dataOutputAssociation id="DataOutputAssociation_1ttbmug">
-        <bpmn:targetRef>DataStoreReference_00o5x9k</bpmn:targetRef>
-      </bpmn:dataOutputAssociation>
-    </bpmn:userTask>
-    <bpmn:userTask id="Activity_0wghuv1" name="Aceitar pedido">
-      <bpmn:incoming>Flow_1lii7fv</bpmn:incoming>
-      <bpmn:outgoing>Flow_1bc9m4l</bpmn:outgoing>
-    </bpmn:userTask>
-    <bpmn:inclusiveGateway id="Gateway_0uwptwp" name="Opções">
-      <bpmn:incoming>Flow_1ooz5pw</bpmn:incoming>
-      <bpmn:outgoing>Flow_1txnp1s</bpmn:outgoing>
-      <bpmn:outgoing>Flow_0qbteu5</bpmn:outgoing>
-    </bpmn:inclusiveGateway>
-    <bpmn:sequenceFlow id="Flow_1txnp1s" sourceRef="Gateway_0uwptwp" targetRef="Activity_1746ytz" />
-    <bpmn:sequenceFlow id="Flow_1lii7fv" sourceRef="Activity_1746ytz" targetRef="Activity_0wghuv1" />
-    <bpmn:sequenceFlow id="Flow_0qbteu5" sourceRef="Gateway_0uwptwp" targetRef="Activity_0vdqswz" />
-    <bpmn:manualTask id="Activity_1baa1ha" name="Separar produtos">
-      <bpmn:incoming>Flow_03r61th</bpmn:incoming>
-      <bpmn:outgoing>Flow_0spt6x0</bpmn:outgoing>
-    </bpmn:manualTask>
-    <bpmn:manualTask id="Activity_1jch6x5" name="Realizar entrega">
-      <bpmn:incoming>Flow_1am5osp</bpmn:incoming>
-      <bpmn:outgoing>Flow_05tjd12</bpmn:outgoing>
-    </bpmn:manualTask>
-    <bpmn:sendTask id="Activity_1k8krfy" name="informar entrega">
-      <bpmn:incoming>Flow_0tly11b</bpmn:incoming>
-      <bpmn:outgoing>Flow_1x1mn8c</bpmn:outgoing>
-    </bpmn:sendTask>
-    <bpmn:parallelGateway id="Gateway_0dkty6l" name="despacho">
-      <bpmn:incoming>Flow_0spt6x0</bpmn:incoming>
-      <bpmn:outgoing>Flow_1am5osp</bpmn:outgoing>
-      <bpmn:outgoing>Flow_0tly11b</bpmn:outgoing>
-    </bpmn:parallelGateway>
-    <bpmn:parallelGateway id="Gateway_0qssdcc" name="pedido aceito">
-      <bpmn:incoming>Flow_1bc9m4l</bpmn:incoming>
-      <bpmn:outgoing>Flow_03r61th</bpmn:outgoing>
-      <bpmn:outgoing>Flow_11g9nfa</bpmn:outgoing>
-    </bpmn:parallelGateway>
-    <bpmn:sequenceFlow id="Flow_03r61th" sourceRef="Gateway_0qssdcc" targetRef="Activity_1baa1ha" />
-    <bpmn:sequenceFlow id="Flow_0spt6x0" sourceRef="Activity_1baa1ha" targetRef="Gateway_0dkty6l" />
-    <bpmn:sequenceFlow id="Flow_1am5osp" name="Continue" sourceRef="Gateway_0dkty6l" targetRef="Activity_1jch6x5" />
-    <bpmn:sequenceFlow id="Flow_0tly11b" name="notificação" sourceRef="Gateway_0dkty6l" targetRef="Activity_1k8krfy" />
-    <bpmn:sequenceFlow id="Flow_11g9nfa" sourceRef="Gateway_0qssdcc" targetRef="Activity_1kr3ur4" />
-    <bpmn:sendTask id="Activity_1kr3ur4" name="informar pedido aceito">
-      <bpmn:incoming>Flow_11g9nfa</bpmn:incoming>
-      <bpmn:outgoing>Flow_07i0he1</bpmn:outgoing>
-    </bpmn:sendTask>
-    <bpmn:task id="Activity_1i1873i" name="Abrir menu Mercado">
-      <bpmn:incoming>Flow_1ocxo5x</bpmn:incoming>
-      <bpmn:outgoing>Flow_1ooz5pw</bpmn:outgoing>
-    </bpmn:task>
-    <bpmn:serviceTask id="Activity_0tf6bjx" name="Carregar plataforma mercado">
-      <bpmn:incoming>Flow_10nf61t</bpmn:incoming>
-      <bpmn:outgoing>Flow_1ocxo5x</bpmn:outgoing>
-    </bpmn:serviceTask>
-    <bpmn:sequenceFlow id="Flow_1ooz5pw" sourceRef="Activity_1i1873i" targetRef="Gateway_0uwptwp" />
-    <bpmn:userTask id="Activity_0vcnt47" name="Receber  comprovante">
-      <bpmn:outgoing>Flow_1nj7t5d</bpmn:outgoing>
-    </bpmn:userTask>
-    <bpmn:userTask id="Activity_0b9e2e9" name="Receber pagamento">
-      <bpmn:incoming>Flow_0dxbdz0</bpmn:incoming>
-      <bpmn:outgoing>Flow_0hq6xls</bpmn:outgoing>
-    </bpmn:userTask>
-    <bpmn:manualTask id="Activity_1ph9scl" name="Pagar com dinheiro">
-      <bpmn:incoming>Flow_1q0lmdp</bpmn:incoming>
-      <bpmn:outgoing>Flow_0dxbdz0</bpmn:outgoing>
-    </bpmn:manualTask>
-    <bpmn:manualTask id="Activity_1inqd0m" name="Pagar com cartão ou PIX">
-      <bpmn:incoming>Flow_0i9ylir</bpmn:incoming>
-      <bpmn:incoming>Flow_1lm484q</bpmn:incoming>
-      <bpmn:outgoing>Flow_1d8wl1y</bpmn:outgoing>
-    </bpmn:manualTask>
-    <bpmn:manualTask id="Activity_0049zvk" name="Receber comprovante">
-      <bpmn:outgoing>Flow_0o8gq1o</bpmn:outgoing>
-    </bpmn:manualTask>
-    <bpmn:scriptTask id="Activity_08ch79s" name="Realizar transação">
-      <bpmn:incoming>Flow_0eaf3lm</bpmn:incoming>
-    </bpmn:scriptTask>
-    <bpmn:userTask id="Activity_0kisw83" name="Ver pedido">
-      <bpmn:incoming>Flow_1dh2nkm</bpmn:incoming>
-      <bpmn:incoming>Flow_1qp04c0</bpmn:incoming>
-      <bpmn:outgoing>Flow_1gc3a3m</bpmn:outgoing>
-    </bpmn:userTask>
-    <bpmn:userTask id="Activity_17xnoq3" name="Finalizar pedido">
-      <bpmn:incoming>Flow_1nj7t5d</bpmn:incoming>
-      <bpmn:incoming>Flow_0hq6xls</bpmn:incoming>
-      <bpmn:outgoing>Flow_1sqf8zh</bpmn:outgoing>
-    </bpmn:userTask>
-    <bpmn:scriptTask id="Activity_07tfx5k" name="Atualizar lista de pedidos">
-      <bpmn:incoming>Flow_0fgmfit</bpmn:incoming>
-      <bpmn:outgoing>Flow_1ywuzy0</bpmn:outgoing>
-    </bpmn:scriptTask>
   </bpmn:process>
   <bpmn:process id="Process_0cvooz8" isExecutable="false" />
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
@@ -570,7 +570,7 @@
       <bpmndi:BPMNShape id="Gateway_1eltz62_di" bpmnElement="Gateway_1eltz62" isMarkerVisible="true">
         <dc:Bounds x="315" y="1425" width="50" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="306.5" y="1475" width="85" height="14" />
+          <dc:Bounds x="307" y="1475" width="85" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_0yi8jrz_di" bpmnElement="Activity_05mqk2i">
@@ -664,7 +664,7 @@
       <bpmndi:BPMNShape id="Gateway_0r2zkax_di" bpmnElement="Gateway_0r2zkax" isMarkerVisible="true">
         <dc:Bounds x="1735" y="435" width="50" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1794.5" y="446" width="49" height="27" />
+          <dc:Bounds x="1795" y="446" width="49" height="27" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_0vvb04p_di" bpmnElement="Activity_0vvb04p">
@@ -740,7 +740,7 @@
       <bpmndi:BPMNShape id="Gateway_1x8s2gv_di" bpmnElement="Gateway_1x8s2gv" isMarkerVisible="true">
         <dc:Bounds x="2715" y="585" width="50" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="2774.5" y="596.5" width="77" height="27" />
+          <dc:Bounds x="2775" y="597" width="77" height="27" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_0kbg4zt_di" bpmnElement="Activity_15rp7sa">
@@ -748,6 +748,7 @@
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_15kumpx_di" bpmnElement="Activity_0z0z5fq">
         <dc:Bounds x="910" y="560" width="100" height="80" />
+        <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="DataStoreReference_11v3wxf_di" bpmnElement="DataStoreReference_11v3wxf">
         <dc:Bounds x="765" y="1065" width="50" height="50" />
