@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org"></html>>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Usuário</h2>
+        <form th:action="@{/clientes/salvar}" method="post">
+            <label>
+                <input type="text" class="nome" placeholder="Nome Completo" required>
+            </label>
+            <label>
+                <input type="text" class="cpf" placeholder="cpf" required>
+            </label>
+            <label>
+                <input type="text" class="endereco" placeholder="Endereco" required>
+            </label>
+            <label>
+                <input type="text" class="telefone" placeholder="Telefone" required>
+            </label>
+            <label>
+                <input type="password" class="senha" placeholder="Senha" required>
+            </label>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <div class="login-link">
+            <p>Já tem uma conta? <a href="login.html">Login</a></p>
+        </div>
+        <div th:if="${param.success}">
+            <p>Cadastro realizado com sucesso!</p>
+        </div>
+    </div>
+</body>
+</html>
+<script src="/static/cadastro.js"></script>
