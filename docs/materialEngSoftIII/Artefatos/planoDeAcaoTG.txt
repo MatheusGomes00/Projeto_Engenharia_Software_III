@@ -1,0 +1,94 @@
+Fase 1: Planejamento (1 mês)
+semana 1
+identificar e documentar os microserviços necessários
+
+semana 2-3
+definir a arquitetura do sistema e as tecnologias a serem utilizadas.
+planejar a distribuição das tarefas entre os membros do grupo.
+
+
+Fase 2: Configuração do Ambiente de Desenvolvimento (1 mês)
+semana 4-5
+configurar os ambientes de desenvolvimento local.
+Instalar e configurar ferramentas como Doker, IDEs, Node.js, JDK, etc.
+
+semana 6-7
+configurar repositórios de código (Git) e definir convenções de código e práticas de versionamento.
+
+
+Fase 3: Desenvolvimento dos Microserviços com Spring Boot (4 meses)
+Semana 8-11:
+Desenvolvimento do Serviço de Catálogo de Produtos.
+Criar projeto, configurar Dockerfile, definir modelos, repositórios e controladores.
+
+Semana 12-15:
+Desenvolvimento do Serviço de Gerenciamento de Pedidos.
+Criar projeto, configurar Dockerfile, definir modelos, repositórios e controladores.
+
+Semana 16-19:
+Desenvolvimento do Serviço de Autenticação e Autorização.
+Criar projeto, configurar Dockerfile, implementar autenticação com Spring Security.
+
+Semana 20-23:
+Desenvolvimento de outros microserviços (Agendamento, Notificações, Pagamentos).
+Seguir processos semelhantes aos dos serviços anteriores.
+
+
+Fase 4: Desenvolvimento da Aplicação Frontend com Angular (3 meses)
+Semana 24-27
+configuração do projeto Angular e desenvolvimento dos componentes básicos. 
+configurar Dockerfile, criar componentes de interface.
+
+Semana 28-31
+desenvolvimento das funcionalidades principais.
+implementar templates HTML e estilos CSS.
+
+Semana 32-35
+integração com backend.
+implementar serviços Angular para comunicação com os microserviços.
+
+Fase 5: Integração e Testes (1 mês)
+Semana 36-39
+configurar docker compose para integração dos microserviços e frontend.
+escrever e executar testes unitários e de integração para cada microserviço.
+
+Semana 40-43
+realizar testes end-to-end da aplicação
+usar ferramentas com Cypress ou Protractor para testes completos.
+
+Fase 6: Monitoramento e Manutenção (1 mês)
+semana 44-47
+configurar monitoramento e logging.
+implementar Prometheus e Grafana, configurar alertas.
+preparar documentação detalhada do projeto.
+
+Fase 7: Alinhamentos Finais, Ajustes e Pequenas Alterações (3 meses)
+semana 48-51
+realizar revisão de código e refatoração, se necessário.
+
+Semana 52-55
+ajustes finais baseados em feedback de testes e orientação.
+
+Semana 56-59
+Preparar a apresentação do projeto e documentação final.
+
+
+Considerações Importantes
+1- Divisão de Tarefas
+Distribua as responsabilidades entre os membros do grupo com base nas habilidades e interesses individuais.
+Considere ter membros focados em backend, frontend e integração.
+
+2- Comunicação e Coordenação
+Mantenha reuniões regulares para acompanhamento do progresso e resolução de problemas.
+Utilize ferramentas de gerenciamento de projetos como Trello, Jira ou GitHub Projects.
+
+3- Gestão de Tempo
+Reserve tempo para imprevistos e atrasos.
+Priorize as funcionalidades essenciais e esteja preparado para ajustar o escopo, se necessário.
+
+4- Documentação
+Documente cada etapa do desenvolvimento, incluindo decisões de design, arquiteturas e problemas encontrados.
+A documentação ajudará durante a fase de ajustes finais e na preparação da apresentação do projeto.
+
+Conclusão
+Com um bom planejamento, divisão de tarefas e gestão de tempo, é possível completar o desenvolvimento da aplicação dentro do prazo de 9 meses, deixando os 3 meses finais para ajustes e melhorias. A chave para o sucesso será a colaboração eficiente e a comunicação constante entre os membros do grupo.

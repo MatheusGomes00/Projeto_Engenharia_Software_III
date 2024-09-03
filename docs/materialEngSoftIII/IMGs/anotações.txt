@@ -1,0 +1,12 @@
+IMG cenário a se avaliar
+
+é um recorte da entrada no sistema, seguido pelos processos de cadastro e login do usuário e sua validação.
+
+no processo em que é validado o login (validar login), 
+caso não seja validado, 
+o gateway direciona para o processo da pagina de login (logar no sistema) novamente.
+
+pensando no layout do sistema para as telas, uma alternativa é um botão de 'voltar'.
+este botão de voltar vira um processo? (voltar página).
+
+até onde especificar o projeto, no cenário para faculdade e para o mercado de trabalho?
