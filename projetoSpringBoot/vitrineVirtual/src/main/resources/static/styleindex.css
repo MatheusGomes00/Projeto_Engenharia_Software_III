@@ -1,0 +1,132 @@
+/* Reset básico */
+body, h2, ul, li, a, button, form, label {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+}
+
+/* Estilo da barra lateral */
+.sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background-color: #2C3E50;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  color: #ecf0f1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 20px;
+}
+
+.sidebar ul li a {
+  color: #ecf0f1;
+  display: block;
+  font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #34495e;
+  border-radius: 4px;
+}
+
+/* Estilo do conteúdo principal */
+.main-content {
+  margin-left: 220px; /* Espaço para a sidebar */
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh; /* Faz com que o conteúdo ocupe a altura total da tela */
+}
+
+.panel {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.panel h2 {
+  color: #2C3E50;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #2C3E50;
+  color: #ecf0f1;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+/* Estilos para a barra de ferramentas com botão e campo de pesquisa */
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre os elementos */
+}
+
+.btn, .input-pesquisa {
+  padding: 10px;
+  border-radius: 10px; /* Bordas arredondadas */
+  border: 1px solid #ccc; /* Borda cinza clara */
+  font-size: 16px;
+}
+
+.btn {
+  background-color: #2C3E50; /* Cor de fundo do botão */
+  color: white; /* Cor do texto do botão */
+  cursor: pointer; /* Cursor do mouse para indicar clicável */
+}
+
+.btn:hover {
+  background-color: #05075f; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.input-pesquisa {
+  flex-grow: 1; /* Faz o campo de pesquisa ocupar o espaço restante */
+  max-width: 300px; /* Largura máxima do campo de pesquisa */
+}
