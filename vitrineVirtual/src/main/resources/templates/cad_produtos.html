@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado - Cadastro de Produto</title>
+    <link rel="stylesheet" href="/static/styleindex.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="vendas.html">Vendas</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="panel">
+            <h2>Cadastrar Produto</h2>
+            <form th:action="@{/produto/salvar}" method="post">
+                <label>Nome do Produto:
+                    <input type="text" class="nome_prod" placeholder="" required><br><br>
+                </label>
+                <label>Descrição do produto:
+                    <input type="text" class="desc_prod" placeholder="Digite as caracteristicas do produto!" required><br><br>
+                </label>
+                <label>Preço:
+                    <input type="number" class="preco_prod" step="0.01" required><br><br>
+                </label>
+                <label>Setor:
+                    <input type="text" class="setor_prod" required><br><br>
+                </label>
+                <button type="submit">Salvar Produto</button>
+                <div th:if="${param.success}">
+                    <p>Cadastro realizado com sucesso!</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/static/cad_produto.js"></script>
+</body>
+</html>

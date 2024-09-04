@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP - Produtos</title>
+    <link rel="stylesheet" href="/static/styleindex.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="vendas.html">Vendas</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="panel">
+            <h2>Produtos</h2>
+            <!-- Container para alinhamento horizontal -->
+            <div class="toolbar">
+                <input type="text" id="pesquisa-produto" class="input-pesquisa" placeholder="Pesquisar produto..." oninput="pesquisarProduto()">
+                <button class="btn" onclick="window.location.href='cad_produtos.html'">Cadastrar Produto</button>
+            </div>
+            <br>
+            <br>
+            <class="panel">
+            <h2>Produtos Cadastrados</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="produtos-lista">
+                    <!-- Produtos cadastrados aparecerão aqui -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
